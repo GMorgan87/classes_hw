@@ -7,6 +7,7 @@ class Team
     @name = name
     @players = players
     @coach = coach
+    @points = 0
   end
 
   # def get_name
@@ -35,5 +36,10 @@ class Team
     end
     return false
   end
+
+  def has_won(win)
+    @points += 1 if win
+  end
+
 
 end
