@@ -29,4 +29,11 @@ class Team
     @players.push(player)
   end
 
+  def is_player_in_team(name)
+    for player in @players
+      return true if player == name
+    end
+    return false
+  end
+
 end

@@ -30,7 +30,10 @@ class TestTeamClass < Minitest::Test
   def test_new_player
     @team.new_player("Noel")
     assert_equal(["Gareth","Fraser", "Nick", "Balazs", "Noel"], @team.players)
-    
+  end
+
+  def test_is_player_in_team__true
+    assert_equal(true, @team.is_player_in_team("Nick"))
   end
 
 end
