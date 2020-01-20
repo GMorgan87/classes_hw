@@ -36,4 +36,9 @@ class TestTeamClass < Minitest::Test
     assert_equal(true, @team.is_player_in_team("Nick"))
   end
 
+  def test_is_player_in_team__false
+    assert_equal(false, @team.is_player_in_team("Alan"))
+  end
+
+
 end
