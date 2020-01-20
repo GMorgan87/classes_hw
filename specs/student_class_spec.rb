@@ -22,9 +22,9 @@ class TestStudent < Minitest::Test
     assert_equal("Fraser", @student.set_name("Fraser"))
   end
 
-  # def test_set_cohort
-  #   assert_equal("E1", @student.set_cohort("E1"))
-  # end
+  def test_set_cohort
+    assert_equal("E1", @student.set_cohort("E1"))
+  end
 
 
 end
